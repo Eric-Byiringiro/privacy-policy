@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – Revival & Reformation Scripture Flyers</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f4f8;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: white;
+      padding: 60px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; left: -60px;
+      width: 220px; height: 220px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 50%;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; right: -40px;
+      width: 280px; height: 280px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 50%;
+    }
+
+    .header-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 1;
+      color: rgba(255,255,255,0.85);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: white;
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-top: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── CONTAINER ── */
+    .container {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+
+    /* ── INTRO BANNER ── */
+    .intro-banner {
+      background: linear-gradient(135deg, #ede7f6, #e8eaf6);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 28px;
+      border-left: 5px solid #7c4dff;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .intro-banner .icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .intro-banner p {
+      font-size: 1rem;
+      color: #4a148c;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .intro-banner strong {
+      color: #311b92;
+    }
+
+    /* ── CARDS ── */
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px 36px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 24px rgba(94,53,177,0.1);
+    }
+
+    h2 {
+      color: #4527a0;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, #ede7f6, #d1c4e9);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 0.97rem;
+      color: #555;
+    }
+
+    ul {
+      margin: 8px 0 12px 4px;
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 0.97rem;
+      color: #555;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: #7c4dff;
+      font-size: 0.7rem;
+      top: 4px;
+    }
+
+    .highlight {
+      background: #fff8e1;
+      border-left: 4px solid #ffc107;
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 0.93rem;
+      color: #5d4037;
+    }
+
+    .highlight-purple {
+      background: #ede7f6;
+      border-left: 4px solid #7c4dff;
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 0.93rem;
+      color: #4a148c;
+    }
+
+    a {
+      color: #7c4dff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: linear-gradient(135deg, #4527a0, #7c4dff);
+      border-radius: 16px;
+      padding: 36px;
+      text-align: center;
+      color: white;
+    }
+
+    .contact-box h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .contact-box p {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 8px;
+    }
+
+    .contact-box .contact-detail {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: white;
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin: 6px;
+    }
+
+    .contact-box .app-note {
+      margin-top: 20px;
+      padding: 14px 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #1a1a2e;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+    }
+
+    footer .footer-logo {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    footer p { 
+      color: rgba(255,255,255,0.6); 
+      margin-bottom: 4px;
+    }
+
+    footer strong { color: rgba(255,255,255,0.9); }
+
+    /* ── TABLE OF CONTENTS ── */
+    .toc {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 36px;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+
+    .toc h3 {
+      color: #4527a0;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 8px;
+    }
+
+    .toc-item {
+      background: #f4f0ff;
+      color: #4527a0;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <span class="header-icon">📖</span>
+  <h1>Revival & Reformation Scripture Flyers</h1>
+  <p>We are committed to protecting your privacy and being transparent about how we handle your information.</p>
+  <span class="header-badge">📅 Effective Date: March 4, 2026</span>
+</header>
+
+<div class="container">
+
+  <!-- ── INTRO BANNER ── -->
+  <div class="intro-banner">
+    <span class="icon">🙏</span>
+    <p>
+      Welcome to <strong>Revival & Reformation Scripture Flyers</strong> ("the App"), 
+      developed and maintained by <strong>Revival and Reformation</strong>. 
+      This Privacy Policy explains clearly and honestly how we handle your information 
+      when you use our App. Our app is completely <strong>free</strong> and created 
+      solely for the purpose of spreading the Gospel of Jesus Christ, promoting 
+      health, and strengthening family values.
+    </p>
+  </div>
+
+  <!-- ── TABLE OF CONTENTS ── -->
+  <div class="toc">
+    <h3>📋 What This Policy Covers</h3>
+    <div class="toc-grid">
+      <div class="toc-item">📦 Information We Collect</div>
+      <div class="toc-item">🔍 How We Use It</div>
+      <div class="toc-item">🔗 Third-Party Services</div>
+      <div class="toc-item">🔔 Push Notifications</div>
+      <div class="toc-item">💾 Offline Storage</div>
+      <div class="toc-item">👶 Children's Privacy</div>
+      <div class="toc-item">🔒 Data Security</div>
+      <div class="toc-item">⚖️ Your Rights</div>
+      <div class="toc-item">📝 Policy Changes</div>
+      <div class="toc-item">📬 Contact Us</div>
+    </div>
+  </div>
+
+  <!-- ── INFORMATION WE COLLECT ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">📦</span>
+      Information We Collect
+    </h2>
+    <p>We collect only the minimal information necessary to provide our services:</p>
+    <ul>
+      <li>
+        <strong>Device Information:</strong> Basic device data (model, OS version) 
+        used only to ensure the app works correctly on your device.
+      </li>
+      <li>
+        <strong>Usage Analytics:</strong> Anonymous data about which flyers and 
+        categories are viewed most, to help us improve our content.
+      </li>
+      <li>
+        <strong>Language Preference:</strong> Your selected language 
+        (Kinyarwanda, English, French, or Swahili) to show you relevant content.
+      </li>
+      <li>
+        <strong>Messages/Feedback:</strong> If you choose to send us a message 
+        through the app, we collect the content of that message only.
+      </li>
+    </ul>
+    <div class="highlight">
+      ⚠️ We do <strong>NOT</strong> collect your name, email address, phone number, 
+      precise location, or any personally identifiable information unless you 
+      voluntarily provide it to us.
+    </div>
+  </div>
+
+  <!-- ── HOW WE USE ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">🔍</span>
+      How We Use Your Information
+    </h2>
+    <p>We use the information collected only to:</p>
+    <ul>
+      <li>Deliver spiritual, health, and family content in your preferred language</li>
+      <li>Improve app performance and content quality</li>
+      <li>Send notifications about newly uploaded flyers (only with your permission)</li>
+      <li>Respond to messages and feedback you send us</li>
+      <li>Track anonymous usage statistics to understand what content is most helpful</li>
+    </ul>
+    <div class="highlight-purple">
+      💡 We never sell, rent, or trade your information to any third party for 
+      commercial purposes. Your data is used solely to serve you better.
+    </div>
+  </div>
+
+  <!-- ── THIRD PARTY ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">🔗</span>
+      Third-Party Services
+    </h2>
+    <p>Our app uses the following trusted third-party services to function:</p>
+    <ul>
+      <li>
+        <strong>Firebase (by Google):</strong> Used for data storage, 
+        synchronization, analytics, and push notifications. &nbsp;
+        <a href="https://firebase.google.com/support/privacy" target="_blank">
+          Firebase Privacy Policy →
+        </a>
+      </li>
+      <li>
+        <strong>Cloudinary:</strong> Used to store and deliver flyer images 
+        efficiently to your device. &nbsp;
+        <a href="https://cloudinary.com/privacy" target="_blank">
+          Cloudinary Privacy Policy →
+        </a>
+      </li>
+    </ul>
+    <div class="highlight">
+      These services may collect anonymous usage data as described in their 
+      respective privacy policies. We do not share your personal data with 
+      any other third parties beyond what is necessary to operate the app.
+    </div>
+  </div>
+
+  <!-- ── NOTIFICATIONS ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">🔔</span>
+      Push Notifications
+    </h2>
+    <p>
+      With your explicit permission, we may send push notifications to inform 
+      you when new flyers or content is uploaded. These notifications are purely 
+      informational and gospel-centered.
+    </p>
+    <p>
+      You can disable notifications at any time through your device settings 
+      without affecting your ability to use the app.
+    </p>
+  </div>
+
+  <!-- ── OFFLINE STORAGE ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">💾</span>
+      Offline Storage
+    </h2>
+    <p>
+      The app allows you to download flyers to your device for offline viewing. 
+      These files are stored <strong>locally on your device only</strong> and are 
+      never uploaded to our servers or shared with anyone.
+    </p>
+    <p>
+      You can delete downloaded content at any time through the app settings 
+      or your device storage manager.
+    </p>
+  </div>
+
+  <!-- ── CHILDREN ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">👶</span>
+      Children's Privacy
+    </h2>
+    <p>
+      Our app is suitable for all ages and is designed to be family-friendly. 
+      We do not knowingly collect personal information from children under 13. 
+      All content is focused on Christian values, health, and family matters 
+      in a safe and appropriate way.
+    </p>
+  </div>
+
+  <!-- ── SECURITY ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">🔒</span>
+      Data Security
+    </h2>
+    <p>
+      We take the security of your information seriously. All data transmitted 
+      between the app and our servers uses secure <strong>HTTPS encryption</strong>. 
+      Firebase, our primary data platform, maintains industry-standard security 
+      certifications.
+    </p>
+    <p>
+      However, no method of transmission over the internet is 100% secure. 
+      We encourage you to use the app responsibly.
+    </p>
+  </div>
+
+  <!-- ── YOUR RIGHTS ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">⚖️</span>
+      Your Rights
+    </h2>
+    <p>As a user of our app, you have the right to:</p>
+    <ul>
+      <li>Use the app fully without providing any personal information</li>
+      <li>Enable or disable push notifications at any time</li>
+      <li>Delete all downloaded content from your device at any time</li>
+      <li>Request deletion of any messages or feedback you have submitted</li>
+      <li>Ask us what data we hold about you at any time</li>
+    </ul>
+  </div>
+
+  <!-- ── CHANGES ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">📝</span>
+      Changes to This Policy
+    </h2>
+    <p>
+      We may update this Privacy Policy from time to time as our app evolves. 
+      Any changes will be reflected with a new effective date at the top of 
+      this page. We encourage you to review this policy periodically.
+    </p>
+    <p>
+      Continued use of the app after any changes constitutes your acceptance 
+      of the updated Privacy Policy.
+    </p>
+  </div>
+
+  <!-- ── CONTACT ── -->
+  <div class="card">
+    <h2>
+      <span class="section-icon">📬</span>
+      Contact Us
+    </h2>
+    <div class="contact-box">
+      <h3>Get In Touch</h3>
+      <p>
+        If you have any questions, concerns, or requests regarding this 
+        Privacy Policy or our app, we would love to hear from you.
+      </p>
+      <br/>
+      <span class="contact-detail">🏢 Revival and Reformation</span>
+      <span class="contact-detail">📍 Kigali, Rwanda</span>
+      <div class="app-note">
+        💬 You can also send us a message directly through the app 
+        using the <strong>"Send us a message"</strong> feature 
+        found in the side menu. We read every message! 🙏
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">📖</div>
+  <p><strong>Revival and Reformation Scripture Flyers</strong></p>
+  <p>© 2026 Revival and Reformation. All rights reserved.</p>
+  <br/>
+  <p>Made with ❤️ for the spreading of God's Word</p>
+  <p style="margin-top:8px; font-size:0.78rem;">
+    Kigali, Rwanda &nbsp;|&nbsp; Free App &nbsp;|&nbsp; No Ads &nbsp;|&nbsp; Gospel First
+  </p>
+</footer>
+
+</body>
+</html>
